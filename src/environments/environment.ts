@@ -4,7 +4,6 @@
 
 export const environment = {
   production: false,
-  videosUrl: 'https://fakes.herokuapp.com/videos',
 };
 
 /*
