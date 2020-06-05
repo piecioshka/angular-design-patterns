@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-body">
+    <video controls #media>
+      <source [src]="source" type="video/mp4" />
+    </video>
+  </div>
+  <div class="card-footer">
+    <div class="btn-group">
+      <button class="btn btn-primary" (click)="play()">
+        Play
+      </button>
+      <button class="btn btn-danger" (click)="stop()">
+        Stop
+      </button>
+    </div>
+  </div>
+</div>

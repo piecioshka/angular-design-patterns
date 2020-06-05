@@ -3,6 +3,7 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { FormsModule } from '@angular/forms';
 
 import { CoreComponent } from './core.component';
+import { FakeComponentFactory } from 'src/fakes/empty.component';
 
 describe('CoreComponent', () => {
   let component: CoreComponent;
@@ -12,6 +13,7 @@ describe('CoreComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         CoreComponent,
+        FakeComponentFactory.createFakeComponent('router-outlet'),
       ],
       imports: [HttpClientTestingModule, FormsModule],
     }).compileComponents();

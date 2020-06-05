@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-body">
+    <audio controls #media>
+      <source [src]="source" type="audio/mp3" />
+    </audio>
+  </div>
+  <div class="card-footer">
+    <div class="btn-group">
+      <button class="btn btn-primary" (click)="play()">
+        Play
+      </button>
+      <button class="btn btn-danger" (click)="stop()">
+        Stop
+      </button>
+    </div>
+  </div>
+</div>
