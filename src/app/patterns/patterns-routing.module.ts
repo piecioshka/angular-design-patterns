@@ -1,12 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { DemoComponent } from 'src/app/patterns/inheritance/demo/demo.component';
-
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'inheritance',
+    pathMatch: 'full'
+  },
+  {
     path: 'inheritance',
-    component: DemoComponent,
+    loadChildren: () => import('./inheritance/inheritance.module').then(m => m.InheritanceModule),
+  },
+  {
+    path: 'composition',
+    loadChildren: () => import('./composition/composition.module').then(m => m.CompositionModule),
   },
 ];
 

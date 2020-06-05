@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-body">
+    <ng-content select=".media"></ng-content>
+  </div>
+  <div class="card-footer">
+    <div class="btn-group">
+      <ng-container *ngFor="let button of buttons">
+        <button class="btn {{ button.className }}" (click)="button.onClick()">
+          {{ button.label }}
+        </button>
+      </ng-container>
+    </div>
+  </div>
+</div>

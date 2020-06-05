@@ -13,4 +13,8 @@ export class VideoComponent extends MediaComponent implements OnInit {
   ngOnInit(): void {
     this.$el = this.el.nativeElement.querySelector('video');
   }
+
+  fullscreen() {
+    this.$el.requestFullscreen();
+  }
 }
