@@ -4,7 +4,7 @@
 
 📔 Angular Design Patterns
 
-## Demo 🎉
+## Preview 🎉
 
 <https://piecioshka.github.io/angular-design-patterns/>
 
