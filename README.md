@@ -1,5 +1,7 @@
 # angular-design-patterns
 
+![typescript](https://img.shields.io/badge/built%20with-TypeScript-3178c6.svg)
+
 [![Testing](https://github.com/piecioshka/angular-design-patterns/actions/workflows/testing.yml/badge.svg?branch=main)](https://github.com/piecioshka/angular-design-patterns/actions/workflows/testing.yml)
 
 📔 Angular Design Patterns
